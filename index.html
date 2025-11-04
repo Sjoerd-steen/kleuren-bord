@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kleurbord</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Kleurbord</h1>
+    <nav>
+      <a href="gallery.html">Gallery</a>
+      <span> · </span>
+      <a href="upload.html">Upload</a>
+    </nav>
+  </header>
+
+  <main class="board-container">
+    <aside class="toolbar">
+
+      <div class="section">
+        <h3>Colors</h3>
+        <div class="color-section">
+          <div class="colors">
+            <button class="color" style="background-color: black;" data-color="black"></button>
+            <button class="color" style="background-color: red;" data-color="red"></button>
+            <button class="color" style="background-color: blue;" data-color="blue"></button>
+            <button class="color" style="background-color: green;" data-color="green"></button>
+            <button class="color" style="background-color: yellow;" data-color="yellow"></button>
+            <button class="color" style="background-color: orange;" data-color="orange"></button>
+            <button class="color" style="background-color: purple;" data-color="purple"></button>
+            <button class="color" style="background-color: pink;" data-color="pink"></button>
+          </div>
+
+
+          <div class="picker-container">
+            <input type="color" id="color-picker" value="#000000" />
+            <label for="color-picker">Kies</label>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3>teken dikte</h3>
+        <div class="slider-group">
+          <input type="range" id="brush-range" min="1" max="50" value="5" />
+          <span id="brush-value">5 px</span>
+        </div>
+      </div>
+
+
+      <div class="section actions">
+        <button id="gum"> Gum</button>
+        <button id="verwijder">Verwijder</button>
+        <button id="save">Download</button>
+      </div>
+    </aside>
+
+    <canvas id="whiteboard"></canvas>
+  </main>
+
+  <footer>
+    <p></p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

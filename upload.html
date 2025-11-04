@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Kunstwerk</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <style>
+    .container { max-width: 640px; margin: 0 auto; }
+    form { display: grid; gap: 12px; }
+  </style>
+  <script defer src="scripts/upload.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Kleurbord</h1>
+    <nav>
+      <a href="gallery.html">Gallery</a>
+      <span> · </span>
+      <a href="upload.html">Upload</a>
+    </nav>
+  </header>
+  <div class="page-container">
+    <div class="card-surface">
+      <h2 class="section-title">Upload kunstwerk</h2>
+      <div class="inline-actions" style="margin-bottom: 12px;">
+        <a href="gallery.html" class="btn">Terug naar gallery</a>
+        <a href="index.html" class="btn">Terug naar bord</a>
+      </div>
+      <div class="container">
+        <form id="upload-form">
+          <input class="input" type="text" name="title" placeholder="Titel" required />
+          <input class="input" type="file" name="imageFile" accept="image/*" required />
+          <button class="btn" type="submit">Opslaan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p></p>
+  </footer>
+</body>
+</html>
+
+

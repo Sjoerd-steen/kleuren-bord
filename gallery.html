@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <style>
+  .gallery-container { max-width: 900px; margin: 0 auto; }
+  .actions { display:flex; gap:12px; align-items:center; margin-bottom: 16px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:16px; }
+  .card { border:1px solid #eee; border-radius:12px; overflow:hidden; background:#fff; display:flex; flex-direction:column; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .card img { width:100%; height:200px; object-fit:cover; background:#f6f6f6; }
+  .card .meta { padding:10px 12px; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+  .empty { text-align:center; color:#666; margin:10px 0 0; }
+  .danger { border:none; }
+  </style>
+  <script defer src="scripts/gallery.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Kleurbord</h1>
+    <nav>
+      <a href="gallery.html">Gallery</a>
+      <span> · </span>
+      <a href="upload.html">Upload</a>
+    </nav>
+  </header>
+  <div class="page-container">
+    <div class="card-surface">
+      <h2 class="section-title">Gallery</h2>
+      <div class="inline-actions" style="margin-bottom: 12px;">
+        <a href="upload.html" class="btn">Upload nieuw werk</a>
+        <a href="index.html" class="btn">Terug naar bord</a>
+      </div>
+      <div class="gallery-container">
+        <div id="gallery" class="grid"></div>
+        <p id="empty" class="empty" style="display:none;">Nog geen kunstwerken. Voeg er eentje toe!</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p></p>
+  </footer>
+</body>
+</html>
+
+
