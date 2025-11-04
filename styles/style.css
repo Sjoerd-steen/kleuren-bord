@@ -11,14 +11,14 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: #333;
+    color: #F86F95;
   }
   
 
   header {
     text-align: center;
     padding: 1rem;
-    background: linear-gradient(90deg, #A1C9C3, #C8D6A3);
+    background: linear-gradient(90deg, #FFAAC1, #F86F95);
     color: #fff;
     font-weight: 600;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -26,7 +26,7 @@
   
   /* Global link styles */
   a {
-    color: #1f6f8b;
+    color: #f1fafd;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.2s ease, text-decoration-color 0.2s ease;
@@ -68,7 +68,7 @@
   .section-title {
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    color: #444;
+    color: #F86F95;
   }
 
   .inline-actions { display:flex; gap:10px; align-items:center; flex-wrap: wrap; }
@@ -81,7 +81,7 @@
     gap: 10px;
     align-items: center;
   }
-  footer nav a { color: #1f6f8b; }
+  footer nav a { color: #F86F95; }
 
   /* Gallery grid polish */
   .grid { margin-top: 8px; }
@@ -114,7 +114,7 @@
   .section h3 {
     font-size: 1.1rem;
     margin-bottom: 0.75rem;
-    color: #444;
+    color: #F86F95;
   }
   
 
@@ -148,7 +148,7 @@
   }
   
   button.color.active {
-    border: 3px solid #00aaff;
+    border: 3px solid #F86F95;
     transform: scale(1.1);
   }
   
@@ -186,7 +186,7 @@
   
   .picker-container label {
     font-size: 0.9rem;
-    color: #555;
+    color: #F86F95;
   }
   
   
@@ -201,7 +201,7 @@
     width: 90%;
     height: 6px;
     border-radius: 4px;
-    background: linear-gradient(90deg, #89C5A0, #5E7769);
+    background: linear-gradient(90deg, #FFAAC1, #F86F95);
     appearance: none;
     outline: none;
     cursor: pointer;
